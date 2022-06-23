@@ -5,8 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <link rel="stylesheet" href="/assets/style.css">
+
 </head>
 <body>
   
+  <header>
+    <h1>House Hunt</h1>
+  </header>
+
+  <nav></nav>
+  <section class="carousel">
+    <ul class="slider">
+      <li class="carousel-child">
+        <img src="/assets/images/house1.jpg" alt="">
+      </li>
+      <li class="carousel-child">
+        <img src="/assets/images/house2.jpg" alt="">
+      </li>
+      <li class="carousel-child">
+        <img src="/assets/images/house3.jpg" alt="">
+      </li>
+      <li class="carousel-child">        
+        <img src="/assets/images/house4.jpg" alt="">
+      </li>
+    </ul>
+  </section>
+  <section>
+    <img src="/assets/images/house1.jpg"/>
+  </section>
+
+  <footer>
+    <p>House Hunt 🏠 Built by </p>
+    <a href="https://github.com/jhugray/" target="blank"> Jess Hause Ugray </a>
+    <p>2022</p>
+  </footer>
+  <script>
+    const slider = new A11YSlider(document.querySelector(".slider"), {
+      autoplay: true,
+      autoplaySpeed: 2500,
+      adaptiveHeight: true,
+      dots: false
+    });
+  </script>
+  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
 </body>
 </html>

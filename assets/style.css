@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  white-space: pre;
+}
+
+.slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.slider li {
+  scroll-snap-align: start;
+}
