@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-  <link rel="stylesheet" href="/assets/style.css">
-
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
   
@@ -26,27 +26,87 @@
       <li>
         <a href="/featured.html">Featured Homes</a>
       </li>
-        <li>
+      <li>
         <a href="#footer">Contact</a>
       </li>
     </ul>
   </nav>
-  <section class="carousel">
-    <ul class="slider">
-      <li class="carousel-child">
-        <img src="/assets/images/house1.jpg" alt="">
-      </li>
-      <li class="carousel-child">
-        <img src="/assets/images/house2.jpg" alt="">
-      </li>
-      <li class="carousel-child">
-        <img src="/assets/images/house3.jpg" alt="">
-      </li>
-      <li class="carousel-child">        
-        <img src="/assets/images/house4.jpg" alt="">
-      </li>
-    </ul>
-  </section>
+
+    <section class="card-slider">
+      <div class="card">
+        <a href="">
+          <h2>123 Example St.</h2>
+          <div class="card-image">
+            <img src="./assets/images/house1.jpg" alt="">
+          </div>
+        </a>
+        <p class="price">$550,000</p>
+        <p class="bedrooms"> 3 Bedrooms</p>
+        <p class="bathrooms"> 2 Bathrooms</p>
+      </div>
+    </section>  
+
+    <section class="card-slider">
+      <div class="card">
+        <a href="">
+          <h2>1 Sample St.</h2>
+          <div class="card-image">
+            <img src="./assets/images/house2.jpg" alt="">
+          </div>
+        </a>
+        <p class="price">$750,000</p>
+        <p class="bedrooms"> 4 Bedrooms</p>
+        <p class="bathrooms"> 3 Bathrooms</p>
+      </div>
+    </section> 
+
+    <section class="card-slider">
+      <div class="card">
+        <a href="">
+          <h2>789 Demo Cres.</h2>
+          <div class="card-image">
+            <img src="./assets/images/house3.jpg" alt="">
+          </div>
+        </a>
+        <p class="price">$299,999</p>
+        <p class="bedrooms"> 2 Bedrooms</p>
+        <p class="bathrooms"> 2 Bathrooms</p>
+      </div>
+    </section> 
+
+    <section class="card-slider">
+      <div class="card">
+        <a href="">
+          <h2>456 Example St.</h2>
+          <div class="card-image">
+            <img src="./assets/images/house4.jpg" alt="">
+          </div>
+        </a>
+        <p class="price">$201,000</p>
+        <p class="bedrooms"> 3 Bedrooms</p>
+        <p class="bathrooms"> 2 Bathrooms</p>
+      </div>
+    </section> 
+
+
+
+
+
+
+
+        <!-- <img src="./assets/images/house1.jpg" alt="">
+      </div>
+      <div class="carousel-child">
+        <img src="./assets/images/house2.jpg" alt="">
+      </div>
+      <div class="carousel-child">
+        <img src="./assets/images/house3.jpg" alt="">
+      </div>
+      <div class="carousel-child">        
+        <img src="./assets/images/house4.jpg" alt="">
+      </div>
+    </section> -->
+
   <section id="search">
     <h2>What are you looking for?</h2>
     <h3>Price</h3>
@@ -80,7 +140,7 @@
     <button>Find my Dream Home!</button>
   </section>
   <section>
-    <img src="/assets/images/house1.jpg"/>
+    <img width="300px" src="./assets/images/house1.jpg"/>
   </section>
 
   <footer id="footer">
@@ -88,14 +148,7 @@
     <a href="https://github.com/jhugray/" target="blank"> Jess Hause Ugray </a>
     <p>2022</p>
   </footer>
-  <script>
-    const slider = new A11YSlider(document.querySelector(".slider"), {
-      autoplay: true,
-      autoplaySpeed: 2500,
-      adaptiveHeight: true,
-      dots: false
-    });
-  </script>
-  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
 </html>
