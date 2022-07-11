@@ -35,6 +35,16 @@ a {
   white-space: pre;
 }
 
+/* home image styling */
+.home-image {
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  width: 95%;
+}
+
 /* featured styling */
 .featured {
   display: flex;
@@ -73,7 +83,6 @@ a {
   font-size: 1.2em;
   margin-bottom: 1em;
 }
-
 
 /* Search Styling */
 #search {
