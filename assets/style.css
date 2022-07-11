@@ -147,7 +147,17 @@ footer a:hover {
 /* Search Styling */
 #search {
   padding: 10px;
-  margin: 10px;
-  border: 5px solid #ccc;
+  margin: 30px; 
+}
+
+#search h2 {
+  text-align: center;
+  color: var(--red);
+  font-size: 30px;
+}
+
+.search-box {
+  border: 5px solid var(--light-green);
   border-radius: 5px;
+  padding: 10px;
 }

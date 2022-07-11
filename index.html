@@ -5,16 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css"
-    />
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
@@ -45,22 +35,34 @@
       />
     </div>
 
+
     <section id="search">
       <h2>What are you looking for?</h2>
-      <div></div>
-      <h3>Price</h3>
-      <form>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
+      <form class="search-box">
         <h3>Type</h3>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
+        <input type="checkbox" id="detached" name="detached" value="detached"/>
+        <label for="detached">Detached Home</label>
+        <input type="checkbox" id="semi-detached" name="semi-detached" value="semi-detached"/>
+        <label for="semi-detached">Semi-Detached Home</label>
+        <input type="checkbox" id="townhouse" name="townhouse" value="townhouse" />
+        <label for="townhouse">Townhouse</label>
+        <input type="checkbox" id="condo" name="condo" value="condo" />
+        <label for="condo">Condo</label>
+        <h3>Price</h3>
+        <input type="checkbox" id="under200k" name="under200k" value="200k" />
+        <label for="under200k">Under $200,000</label>
+        <input type="checkbox" id="200-400" name="200-400" value="200-400k" />
+        <label for="200-400">$200 - $400,000</label>
+        <input type="checkbox" id="400-600" name="400-600" value="400-600k" />
+        <label for="400-600">$400,000 - $600,000</label>
+        <input type="checkbox" id="600-800" name="600-800" value="600-800k"/>
+        <label for="600-800">$600,000 - $800,000</label>
+        <input type="checkbox" id="800-1m" name="800-1m" value="800k-1m" />
+        <label for="800-1m">$800,000 - $1,000,000</label>
+        <input type="checkbox" id="1m-2m" name="1m-2m" value="1m-2m" />
+        <label for="1m-2m">$1,000,000 - $2,000,000</label>
+        <input type="checkbox" id="2m" name="2m" value="2m" />
+        <label for="2m">Over $2,000,000</label>
         <h3>Bedrooms</h3>
         <input type="checkbox" />
         <input type="checkbox" />
@@ -75,10 +77,12 @@
         <input type="checkbox" />
         <h3>Garage</h3>
         <input type="checkbox" />
+        <input type="checkbox" />
+        <input type="checkbox"/>
         <h3>Air Conditioning</h3>
         <input type="checkbox" />
+        <button>Find my Dream Home!</button>
       </form>
-      <button>Find my Dream Home!</button>
     </section>
 
     <section class="home-image">
