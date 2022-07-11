@@ -16,8 +16,15 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #6a994e;
+  background-color: var(--medium-green);
   padding: 10px;
+  margin: 10px;
+}
+
+header h1 {
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
 }
 
 nav ul {
@@ -36,15 +43,16 @@ nav li a {
   font-size: 20px;
 }
 nav li a:hover {
-  background-color: #386641;
+  background-color: var(--dark-green);
   border-radius: 5px;
 }
 /* footer styling */
 footer {
   display: flex;
   justify-content: center;
-  background-color: #386641;
+  background-color: var(--dark-green);
   color: white;
+  margin: 10px;
 }
 
 footer a {
@@ -55,15 +63,6 @@ footer a {
 footer a:hover {
   color: #6a994e
 }
-/* footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer a {
-  text-decoration: none;
-  white-space: pre;
-} */
 
 /* home image styling */
 .home-image {
@@ -72,7 +71,7 @@ footer a {
 }
 
 .home-image img {
-  width: 95%;
+  width: 90%;
 }
 
 /* featured styling */
