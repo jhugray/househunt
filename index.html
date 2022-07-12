@@ -35,53 +35,114 @@
       />
     </div>
 
-
     <section id="search">
       <h2>What are you looking for?</h2>
       <form class="search-box">
-        <h3>Type</h3>
-        <input type="checkbox" id="detached" name="detached" value="detached"/>
-        <label for="detached">Detached Home</label>
-        <input type="checkbox" id="semi-detached" name="semi-detached" value="semi-detached"/>
-        <label for="semi-detached">Semi-Detached Home</label>
-        <input type="checkbox" id="townhouse" name="townhouse" value="townhouse" />
-        <label for="townhouse">Townhouse</label>
-        <input type="checkbox" id="condo" name="condo" value="condo" />
-        <label for="condo">Condo</label>
-        <h3>Price</h3>
-        <input type="checkbox" id="under200k" name="under200k" value="200k" />
-        <label for="under200k">Under $200,000</label>
-        <input type="checkbox" id="200-400" name="200-400" value="200-400k" />
-        <label for="200-400">$200 - $400,000</label>
-        <input type="checkbox" id="400-600" name="400-600" value="400-600k" />
-        <label for="400-600">$400,000 - $600,000</label>
-        <input type="checkbox" id="600-800" name="600-800" value="600-800k"/>
-        <label for="600-800">$600,000 - $800,000</label>
-        <input type="checkbox" id="800-1m" name="800-1m" value="800k-1m" />
-        <label for="800-1m">$800,000 - $1,000,000</label>
-        <input type="checkbox" id="1m-2m" name="1m-2m" value="1m-2m" />
-        <label for="1m-2m">$1,000,000 - $2,000,000</label>
-        <input type="checkbox" id="2m" name="2m" value="2m" />
-        <label for="2m">Over $2,000,000</label>
-        <h3>Bedrooms</h3>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <h3>Bathrooms</h3>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <h3>Garage</h3>
-        <input type="checkbox" />
-        <input type="checkbox" />
-        <input type="checkbox"/>
-        <h3>Air Conditioning</h3>
-        <input type="checkbox" />
-        <button>Find my Dream Home!</button>
+        <fieldset class="fieldset">
+          <legend>Home Type</legend>
+          <input type="checkbox" id="detached" name="type" value="detached" />
+          <label for="detached">Detached Home</label><br />
+          <input
+            type="checkbox"
+            id="semi-detached"
+            name="type"
+            value="semi-detached"
+          />
+          <label for="semi-detached">Semi-Detached Home</label><br />
+          <input type="checkbox" id="townhouse" name="type" value="townhouse" />
+          <label for="townhouse">Townhouse</label><br />
+          <input type="checkbox" id="condo" name="type" value="condo" />
+          <label for="condo">Condo</label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Price</legend>
+          <input type="checkbox" id="under200k" name="price" value="200" />
+          <label for="under200k">Under $200,000</label><br />
+          <input type="checkbox" id="200-400" name="price" value="200-400" />
+          <label for="200-400">$200 - $400,000</label><br />
+          <input type="checkbox" id="400-600" name="price" value="400-600" />
+          <label for="400-600">$400,000 - $600,000</label><br />
+          <input type="checkbox" id="600-800" name="price" value="600-800" />
+          <label for="600-800">$600,000 - $800,000</label><br />
+          <input type="checkbox" id="800-1m" name="price" value="800-1" />
+          <label for="800-1m">$800,000 - $1,000,000</label><br />
+          <input type="checkbox" id="1m-2m" name="price" value="1-2" />
+          <label for="1m-2m">$1,000,000 - $2,000,000</label><br />
+          <input type="checkbox" id="2m" name="price" value="2" />
+          <label for="2m">Over $2,000,000</label>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Bedrooms</legend>
+          <input type="checkbox" id="studio" name="bedrooms" value="0" />
+          <label for="studio">Studio</label><br />
+          <input type="checkbox" id="1-bed" name="bedrooms" value="1" />
+          <label for="1-bed">1 Bedroom</label><br />
+          <input type="checkbox" id="2-bed" name="bedrooms" value="2" />
+          <label for="2-bed">2 Bedrooms</label><br />
+          <input type="checkbox" id="3-bed" name="bedrooms" value="3" />
+          <label for="3-bed">3 Bedrooms</label><br />
+          <input type="checkbox" id="4-bed" name="bedrooms" value="4" />
+          <label for="4-bed">4 Bedrooms</label><br />
+          <input type="checkbox" id="5-bed" name="bedrooms" value="5" />
+          <label for="5-bed">5+ Bedrooms</label><br />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Bathrooms</legend>
+          <input type="checkbox" id="1bath" name="bathrooms" value="1" />
+          <label for="1bath">1 Bathroom</label><br />
+          <input type="checkbox" id="2bath" name="bathrooms" value="2" />
+          <label for="2bath">2 Bathrooms</label><br />
+          <input type="checkbox" id="3bath" name="bathrooms" value="3" />
+          <label for="3bath">3 Bathrooms</label><br />
+          <input type="checkbox" id="4bath" name="bathrooms" value="4" />
+          <label for="4bath">4+ Bathrooms</label><br />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Garage</legend>
+          <input type="checkbox" id="none" name="garage" value="none" />
+          <label for="none">None</label><br />
+          <input type="checkbox" id="attached" name="garage" value="attached" />
+          <label for="attached">Attached</label><br />
+          <input
+            type="checkbox"
+            id="detachedGarage"
+            name="garage"
+            value="detached"
+          />
+          <label for="detached">Detached</label><br />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Air Conditioner</legend>
+          <input type="checkbox" id="air" name="air" value="air" />
+          <label for="air">Air Conditioner</label><br />
+          <input type="checkbox" id="noAir" name="air" value="noAir" />
+          <label for="noAir">No Air Conditioner</label><br />
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Fireplace</legend>
+          <input
+            type="checkbox"
+            id="fireplace"
+            name="fireplace"
+            value="fireplace"
+          />
+          <label for="fireplace">Fireplace</label><br />
+          <input
+            type="checkbox"
+            id="noFireplace"
+            name="fireplace"
+            value="noFireplace"
+          />
+          <label for="noFireplace">No Fireplace</label><br />
+        </fieldset>
+
+        <input id="search-button" type="submit" name="submit" value="Find homes">
       </form>
     </section>
 

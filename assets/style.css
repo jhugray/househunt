@@ -19,7 +19,6 @@ header {
   align-items: center;
   background-color: var(--medium-green);
   padding: 10px;
-  margin: 10px;
 }
 
 header h1 {
@@ -72,8 +71,8 @@ footer a:hover {
 }
 
 .home-image img {
-  width: 95%;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
 }
 
 /* featured styling */
@@ -160,4 +159,19 @@ footer a:hover {
   border: 5px solid var(--light-green);
   border-radius: 5px;
   padding: 10px;
+}
+
+#search-button {
+  background-color: var(--dark-green);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: var(--light-green);
 }
