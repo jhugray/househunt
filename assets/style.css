@@ -72,7 +72,6 @@ footer a:hover {
 
 .home-image img {
   width: 100%;
-  border-radius: 0 0 5px 5px;
 }
 
 /* featured styling */
@@ -146,7 +145,6 @@ footer a:hover {
 /* Search Styling */
 #search {
   padding: 10px;
-  margin: 30px; 
   background-color: var(--cream);
   display: flex;
   justify-content: center;
@@ -190,7 +188,7 @@ footer a:hover {
 }
 
 .fieldset legend {
-  color:var(--red);
-  font-size: 15px;  
+  color: var(--red);
+  font-size: 15px;
   font-weight: bold;
 }
