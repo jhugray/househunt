@@ -52,7 +52,7 @@ footer {
   justify-content: center;
   background-color: var(--dark-green);
   color: white;
-  margin: 10px;
+  padding: 10px;
 }
 
 footer a {
@@ -156,9 +156,10 @@ footer a:hover {
 }
 
 .search-box {
-  border: 5px solid var(--light-green);
+  /* border: 5px solid var(--light-green); */
   border-radius: 5px;
   padding: 10px;
+  background-color: var(--cream);
 }
 
 #search-button {
@@ -174,4 +175,8 @@ footer a:hover {
 
 #search-button:hover {
   background-color: var(--light-green);
+}
+
+.fieldset {
+  background-color: white;
 }
