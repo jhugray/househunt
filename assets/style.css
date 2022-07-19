@@ -2,7 +2,7 @@
   --dark-green: #386641;
   --medium-green: #6a994e;
   --light-green: #a7c957;
-  --cream: #f2e8cf;
+  --cream: #f2e8cf75;
   --red: #bc4749;
   --grey: #515052;
 }
@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--medium-green);
+  background-image: linear-gradient(to left, var(--medium-green), var(--light-green));  
   padding: 10px;
 }
 
