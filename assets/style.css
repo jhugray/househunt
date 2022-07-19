@@ -189,6 +189,7 @@ footer img {
 
 .fieldset {
   background-color: white;
+  border-radius: 5px;
 }
 
 .fieldset legend {
